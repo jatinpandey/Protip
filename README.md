@@ -8,12 +8,15 @@ Installation:
 
 Get XCode (Mac only). Clone the project, open in XCode and run. Super simple :)
 
-Hours:
+Hours: 6
+
+Completed Stories:
+
+ * [x] Required: User can view a list of latest box office movies including title, cast and tomatoes rating
+ * [x] Required: User can click on a movie in the list to bring up a details page with additional information such as synopsis
+ * [x] Optional: Placeholder image is used for movie posters loaded in from the network
 
 
+GIF walkthrough:
 
-Stories:
-
-
-GIF:
-
+![Video Walkthrough](anim_protip.gif)
