@@ -12,10 +12,9 @@ Hours: 6
 
 Completed Stories:
 
- * [x] Required: User can view a list of latest box office movies including title, cast and tomatoes rating
- * [x] Required: User can click on a movie in the list to bring up a details page with additional information such as synopsis
- * [x] Optional: Placeholder image is used for movie posters loaded in from the network
-
+ * [x] Required: Calculate tip with bill amount and tip percentage input
+ * [x] Required: Save and load default tip percentage from Settings Page
+ * [x] Optional: Add a light/dark color theme to the settings view. In viewWillAppear, update views with the correct theme colors.
 
 GIF walkthrough:
 
