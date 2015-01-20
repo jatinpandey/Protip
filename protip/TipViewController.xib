@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYE-FI-fZe">
-                    <rect key="frame" x="162" y="221" width="75" height="21"/>
+                    <rect key="frame" x="194" y="214" width="75" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.053646967878790495" green="0.089751034772158761" blue="0.39790675951086951" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -32,7 +32,7 @@
                     </variation>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNP-Ig-Jdt">
-                    <rect key="frame" x="162" y="297" width="75" height="21"/>
+                    <rect key="frame" x="194" y="290" width="75" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.053646967878790495" green="0.089751034772158761" blue="0.39790675951086951" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                     </variation>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF8-xN-wbV">
-                    <rect key="frame" x="13" y="221" width="51" height="21"/>
+                    <rect key="frame" x="45" y="214" width="51" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.053646967878790495" green="0.089751034772158761" blue="0.39790675951086951" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -53,7 +53,7 @@
                     </variation>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBF-AZ-thp">
-                    <rect key="frame" x="13" y="297" width="51" height="21"/>
+                    <rect key="frame" x="45" y="290" width="51" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.053646967878790495" green="0.089751034772158761" blue="0.39790675951086951" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -62,7 +62,7 @@
                     </variation>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter bill amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ASC-rb-yPw">
-                    <rect key="frame" x="32" y="107" width="182" height="30"/>
+                    <rect key="frame" x="64" y="100" width="182" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad"/>
                     <variation key="widthClass=compact" fixedFrame="YES">
@@ -73,7 +73,7 @@
                     </variation>
                 </textField>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTT-qJ-9fq">
-                    <rect key="frame" x="122" y="181" width="2" height="205"/>
+                    <rect key="frame" x="154" y="174" width="2" height="205"/>
                     <color key="backgroundColor" red="0.05364696788" green="0.089751034770000002" blue="0.39790675949999998" alpha="1" colorSpace="calibratedRGB"/>
                     <variation key="widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="102" y="171" width="2" height="205"/>
@@ -83,7 +83,7 @@
                     </variation>
                 </view>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="r6o-TC-4wE">
-                    <rect key="frame" x="13" y="478" width="224" height="29"/>
+                    <rect key="frame" x="45" y="471" width="224" height="29"/>
                     <segments>
                         <segment title="10%"/>
                         <segment title="15%"/>
@@ -100,13 +100,13 @@
                     </connections>
                 </segmentedControl>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whH-tl-6yR">
-                    <rect key="frame" x="195" y="425" width="42" height="21"/>
+                    <rect key="frame" x="227" y="418" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.05364696788" green="0.089751034770000002" blue="0.39790675949999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ui-GC-ARy">
-                    <rect key="frame" x="13" y="424" width="82" height="21"/>
+                    <rect key="frame" x="45" y="417" width="82" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.05364696788" green="0.089751034770000002" blue="0.39790675949999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>

@@ -12,6 +12,8 @@
 @interface SettingsViewController ()
 - (IBAction)onSetDefaultTip:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *defaultTipPercentage;
+- (IBAction)onLightTheme:(id)sender;
+- (IBAction)onDarkTheme:(id)sender;
 
 @end
 
@@ -43,6 +45,22 @@
     NSLog(@"Set default of %d%%", defaultTip);
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setInteger:defaultTip forKey:@"default_tip_percentage"];
+    [defaults synchronize];
+    TipViewController *tvc = (TipViewController *)self.presentingViewController;
+    [tvc updateValues];
+}
+
+- (IBAction)onLightTheme:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:@"light" forKey:@"theme"];
+    [defaults synchronize];
+    TipViewController *tvc = (TipViewController *)self.presentingViewController;
+    [tvc updateValues];
+}
+
+- (IBAction)onDarkTheme:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:@"dark" forKey:@"theme"];
     [defaults synchronize];
     TipViewController *tvc = (TipViewController *)self.presentingViewController;
     [tvc updateValues];

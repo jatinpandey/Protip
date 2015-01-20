@@ -36,7 +36,6 @@
     // Do any additional setup after loading the view from its nib.
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonItemStylePlain target:self action:@selector(onSettingsButton)];
     [self updateValues];
-    NSLog(@"Wooo!");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,13 +49,23 @@
     float tipPercent = [tipArray[self.tipControl.selectedSegmentIndex] floatValue];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSInteger storedTip = [defaults integerForKey:@"default_tip_percentage"];
+    NSString *theme = [defaults objectForKey:@"theme"];
     if (storedTip) {
         self.tipPercentage.text = [NSString stringWithFormat:@"%ld%%", (long)storedTip];
         float floatTip = (float)storedTip;
         tipPercent = floatTip/100;
+        [defaults removeObjectForKey:@"default_tip_percentage"];
+        [defaults synchronize];
     }
     else {
         self.tipPercentage.text = [NSString stringWithFormat:@"%.0f%%", tipPercent * 100];
+    }
+    if ([theme isEqual: @"light"]) {
+        NSLog(@"Light");
+        self.view.backgroundColor = [UIColor whiteColor];
+    } else {
+        NSLog(@"Dark");
+        self.view.backgroundColor = [UIColor colorWithRed:160/256.0 green:160/256.0 blue:200/256.0 alpha:1.0];
     }
     float tipAmount = billAmount * tipPercent;
     float totalAmount = billAmount + tipAmount;
