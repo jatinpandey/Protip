@@ -9,6 +9,7 @@
                 <outlet property="billTextField" destination="ASC-rb-yPw" id="PGB-NM-oB1"/>
                 <outlet property="tipControl" destination="r6o-TC-4wE" id="9wn-sR-JMG"/>
                 <outlet property="tipLabel" destination="LYE-FI-fZe" id="tud-YH-Sye"/>
+                <outlet property="tipPercentage" destination="whH-tl-6yR" id="tEu-hD-xne"/>
                 <outlet property="totalLabel" destination="qNP-Ig-Jdt" id="71m-x3-YZn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -98,6 +99,18 @@
                         <action selector="onTap:" destination="-1" eventType="valueChanged" id="ay8-g6-Q0M"/>
                     </connections>
                 </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whH-tl-6yR">
+                    <rect key="frame" x="195" y="425" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.05364696788" green="0.089751034770000002" blue="0.39790675949999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ui-GC-ARy">
+                    <rect key="frame" x="13" y="424" width="82" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.05364696788" green="0.089751034770000002" blue="0.39790675949999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.89238705842391308" green="0.89238705842391308" blue="0.89238705842391308" alpha="1" colorSpace="calibratedRGB"/>
             <gestureRecognizers/>

@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *billTextField;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tipPercentage;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 
 - (IBAction)onTap:(id)sender;
@@ -47,6 +48,16 @@
     float billAmount = [self.billTextField.text floatValue];
     NSArray *tipArray = @[@(0.1), @(0.15), @(0.2)];
     float tipPercent = [tipArray[self.tipControl.selectedSegmentIndex] floatValue];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger storedTip = [defaults integerForKey:@"default_tip_percentage"];
+    if (storedTip) {
+        self.tipPercentage.text = [NSString stringWithFormat:@"%ld%%", (long)storedTip];
+        float floatTip = (float)storedTip;
+        tipPercent = floatTip/100;
+    }
+    else {
+        self.tipPercentage.text = [NSString stringWithFormat:@"%.0f%%", tipPercent * 100];
+    }
     float tipAmount = billAmount * tipPercent;
     float totalAmount = billAmount + tipAmount;
     self.tipLabel.text = [NSString stringWithFormat:@"%.2f", tipAmount];

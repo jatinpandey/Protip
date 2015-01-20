@@ -7,8 +7,11 @@
 //
 
 #import "SettingsViewController.h"
+#import "TipViewController.h"
 
 @interface SettingsViewController ()
+- (IBAction)onSetDefaultTip:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *defaultTipPercentage;
 
 @end
 
@@ -17,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +37,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)onSetDefaultTip:(id)sender {
+    int defaultTip = [self.defaultTipPercentage.text integerValue];
+    NSLog(@"Set default of %d%%", defaultTip);
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setInteger:defaultTip forKey:@"default_tip_percentage"];
+    [defaults synchronize];
+    TipViewController *tvc = (TipViewController *)self.presentingViewController;
+    [tvc updateValues];
+}
 
 @end

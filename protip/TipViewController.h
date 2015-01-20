@@ -10,4 +10,7 @@
 
 @interface TipViewController : UIViewController
 
+- (void) updateValues;
+
+
 @end
